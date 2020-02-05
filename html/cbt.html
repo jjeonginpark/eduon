@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>에듀온 매니저</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="../js/html5shiv.js" charset="utf-8" ></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+	<a id="skipNavigation" href="#container">본문 바로가기</a>
+	<!-- wrap -->
+	<div id="wrap" class="sub">
+		<div class="gnb-left">
+            <div style="color:rgba(225,225,225,0.5); text-align:center; margin-top:50px; font-size:20px; font-weight:bold; font-style:italic;">lnb영역</div>
+        </div>
+        <!-- container -->
+		<div class="container">
+			<div class="page-titlebox">
+				<h2 class="title">문제은행/CBT</h2>
+			</div>
+			<!-- contents -->
+			<div class="contents">
+                <div class="sub-title">
+                    <div class="title fl">게시판 1</div>
+                    <div class="btns">
+                        <a class="btn-type6" href="javascript:void(0);">기타등록</a>
+                    </div>
+                </div>
+                <!-- tbl-write -->
+                <div class="tbl-write">
+                    <table>
+                        <caption>테이블 제목</caption>
+                        <colgroup>
+                            <col style="width:128px;">
+                            <col style="width:356px;">
+                            <col style="width:128px;">
+                            <col style="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">제목</th>
+                                <td colspan="3">
+                                    <input class="int" type="text" style="width:325px;" />
+                                    <div class="common-check">
+                                        <input id="c-1" type="checkbox" name="">
+                                        <label for="c-1"><span>대표공지</span></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">표시일자</th>
+                                <td>
+                                    <input class="int" type="text" style="width:290px;" />
+                                    <a class="btn-calendar" href="javascript:void(0);"><img src="../images/icon_calendar.png" align="달력" /></a>
+                                </td>
+                                <th scope="row">작성자</th>
+                                <td>
+                                    <input class="int" type="text" style="width:60%;" />
+                                    <div class="common-check">
+                                        <input id="c-2" type="checkbox" name="">
+                                        <label for="c-2"><span>EDUON 표시</span></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">내용</th>
+                                <td colspan="3">
+                                    <div class="text-deditor" style="width:100%; height:263px;">
+                                        텍스트 에디터 오는 자리
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">공개여부</th>
+                                <td colspan="3">
+                                    <div class="radio-group">
+                                        <div class="common-radio">
+                                            <input id="r-1" type="radio" name="radio1">
+                                            <label for="r-1"><span>공개</span></label>
+                                        </div>
+                                        <div class="common-radio">
+                                            <input id="r-2" type="radio" name="radio1" checked >
+                                            <label for="r-2"><span>비공개</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">영상주소</th>
+                                <td colspan="3">
+                                    <input class="int" type="text" style="width:325px;" />
+                                    ( 영상위치 : 
+                                    <div class="radio-group" style="display:inline-block;">
+                                        <div class="common-radio">
+                                            <input id="r-3" type="radio" name="radio2">
+                                            <label for="r-3"><span>본문상단</span></label>
+                                        </div>
+                                        <div class="common-radio">
+                                            <input id="r-4" type="radio" name="radio2" checked >
+                                            <label for="r-4"><span>본문하단</span></label>
+                                        </div>
+                                    </div>
+                                     )
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일1</th>
+                                <td colspan="3">
+                                    <div class="common-int-file">
+                                        <div class="file-path ellipsis">C:\filelist.html</div>
+                                        <div class="file-right fix">
+                                            <div class="file-btns">
+                                                <span class="btn-type3">파일첨부</span>
+                                                <input class="int-file" type="file" name="" />
+                                            </div>
+                                            <a class="btn-type3 file-del">삭제</a>
+                                        </div>
+                                    </div>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일2</th>
+                                <td colspan="3">
+                                    <div class="common-int-file">
+                                        <div class="file-path ellipsis">C:\filelist.html</div>
+                                        <div class="file-right fix">
+                                            <div class="file-btns">
+                                                <span class="btn-type3">파일첨부</span>
+                                                <input class="int-file" type="file" name="" />
+                                            </div>
+                                            <a class="btn-type3 file-del">삭제</a>
+                                        </div>
+                                    </div>  
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-write -->
+                <!-- btnbox -->
+                <div class="btnbox mt10 fix">
+                    <a class="btn-type1 fl" href="javascript:void(0);">목록</a>
+                    <a class="btn-type2 fr" href="javascript:void(0);">등록</a>
+                </div>
+                <!-- //btnbox -->
+				<div class="sub-title mt">
+                    <div class="title fl">게시판 2</div>
+                    <div class="btns">
+                        <a class="btn-type6" href="javascript:void(0);">기타등록</a>
+                    </div>
+                </div>
+                <!-- tbl-write -->
+                <div class="tbl-write">
+                    <table>
+                        <caption>테이블 제목</caption>
+                        <colgroup>
+                            <col style="width:128px;">
+                            <col style="width:356px;">
+                            <col style="width:128px;">
+                            <col style="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">제목</th>
+                                <td colspan="3">
+                                    <input class="int" type="text" style="width:325px;" />
+                                    <div class="common-check">
+                                        <input id="c-3" type="checkbox" name="">
+                                        <label for="c-4"><span>대표공지</span></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">표시일자</th>
+                                <td>
+                                    <input class="int" type="text" style="width:290px;" />
+                                    <a class="btn-calendar" href="javascript:void(0);"><img src="../images/icon_calendar.png" align="달력" /></a>
+                                </td>
+                                <th scope="row">작성자</th>
+                                <td>
+                                    <input class="int" type="text" style="width:60%;" />
+                                    <div class="common-check">
+                                        <input id="c-3" type="checkbox" name="">
+                                        <label for="c-4"><span>EDUON 표시</span></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">내용</th>
+                                <td colspan="3">
+                                    <div class="text-deditor" style="width:100%; height:263px;">
+                                        텍스트 에디터 오는 자리
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">공개여부</th>
+                                <td colspan="3">
+                                    <div class="radio-group">
+                                        <div class="common-radio">
+                                            <input id="r-5" type="radio" name="radio3">
+                                            <label for="r-5"><span>공개</span></label>
+                                        </div>
+                                        <div class="common-radio">
+                                            <input id="r-6" type="radio" name="radio3" checked >
+                                            <label for="r-6"><span>비공개</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">영상주소</th>
+                                <td colspan="3">
+                                    <input class="int" type="text" style="width:325px;" />
+                                    ( 영상위치 : 
+                                    <div class="radio-group" style="display:inline-block;">
+                                        <div class="common-radio">
+                                            <input id="r-7" type="radio" name="radio4">
+                                            <label for="r-7"><span>본문상단</span></label>
+                                        </div>
+                                        <div class="common-radio">
+                                            <input id="r-8" type="radio" name="radio4" checked >
+                                            <label for="r-8"><span>본문하단</span></label>
+                                        </div>
+                                    </div>
+                                     )
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일1</th>
+                                <td colspan="3">
+                                    <div class="common-int-file" style="width:100%;">
+                                        <div class="file-path ellipsis">C:\filelist.html</div>
+                                        <div class="file-right fix">
+                                            <div class="file-btns">
+                                                <span class="btn-type3">파일첨부</span>
+                                                <input class="int-file" type="file" name="" />
+                                            </div>
+                                            <a class="btn-type3 file-del">삭제</a>
+                                        </div>
+                                    </div>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일2</th>
+                                <td colspan="3">
+                                    <div class="common-int-file" style="width:100%;">
+                                        <div class="file-path ellipsis">C:\filelist.html</div>
+                                        <div class="file-right fix">
+                                            <div class="file-btns">
+                                                <span class="btn-type3">파일첨부</span>
+                                                <input class="int-file" type="file" name="" />
+                                            </div>
+                                            <a class="btn-type3 file-del">삭제</a>
+                                        </div>
+                                    </div>  
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-write -->
+                <!-- btnbox -->
+                <div class="btnbox mt10 fix">
+                    <a class="btn-type1 fl" href="javascript:void(0);">목록</a>
+                    <a class="btn-type2 fr" href="javascript:void(0);">등록</a>
+                </div>
+                <!-- //btnbox -->
+			</div>
+			<!-- //contents -->
+		</div>
+        <!-- //container -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

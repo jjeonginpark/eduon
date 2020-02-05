@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>에듀온 매니저</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="../js/html5shiv.js" charset="utf-8" ></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+	<a id="skipNavigation" href="#container">본문 바로가기</a>
+	<!-- wrap -->
+	<div id="wrap" class="sub">
+		<div class="gnb-left">
+            <div style="color:rgba(225,225,225,0.5); text-align:center; margin-top:50px; font-size:20px; font-weight:bold; font-style:italic;">lnb영역</div>
+        </div>
+        <!-- container -->
+		<div class="container">
+			<div class="page-titlebox">
+				<h2 class="title">쿠폰관리</h2>
+			</div>
+			<!-- contents -->
+			<div class="contents">
+                <ul>
+                    <li><a href="javascript:openModal('modalView');">1. 레이어 뷰</a></li>
+                    <li><a href="javascript:openModal('modalList');">2. 레이어 리스트</a></li>
+                    <li><a href="javascript:openModal('modalRegister');">3. 레이어 등록</a></li>
+                </ul>
+			</div>
+			<!-- //contents -->
+		</div>
+        <!-- //container -->
+        <div class="shadow"></div>
+	</div>
+	<!-- //wrap -->
+    <!-- modal modalView -->
+    <div class="modal" id="modalView" style="width:640px;">
+        <div class="modal-inner">
+            <div class="m-title">제목</div>
+            <div class="m-body">
+                <!-- tbl-view -->
+                <div class="tbl-view horizon">
+                    <table>
+                        <caption>테이블 제목</caption>
+                        <colgroup>
+                            <col style="width:20%;">
+                            <col style="width:30%;">
+                            <col style="width:20%;">
+                            <col style="width:30%;">
+                            <col >
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="no-left-line">이름</th>
+                                <td>홍길동</td>
+                                <th scope="row">나이</th>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">표시일자</th>
+                                <td>2017. 04 ~ 2017. 10 수강</td>
+                                <th scope="row">기타</th>
+                                <td>무직</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">내용</th>
+                                <td colspan="3">개리직 패키지<br><br><br><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-view -->
+            </div>
+            <div class="m-footer fix">
+                <a class="btn-type2 fr" href="javascript:void(0);">수정</a>
+            </div>
+            <a class="btn-modal-close" href="javascript:void(0);">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal modalList -->
+    <div class="modal" id="modalList" style="width:640px;">
+        <div class="modal-inner">
+            <div class="m-title">제목</div>
+            <div class="m-body">
+                <!-- tbl-view -->
+                <div class="tbl-view">
+                    <table>
+                        <caption>테이블 제목</caption>
+                        <colgroup>
+                            <col style="width:8%;">
+                            <col >
+                            <col style="width:15%;">
+                            <col style="width:15%;">
+                            <col style="width:15%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="no-left-line">번호</th>
+                                <th scope="col">메일</th>
+                                <th scope="col">이름</th>
+                                <th scope="col">나이</th>
+                                <th scope="col">편집</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="no-left-line">1</td>
+                                <td>12345@naver.com</td>
+                                <td>홍길동</td>
+                                <td>40</td>
+                                <td><a class="btn-type4" href="javascript:void(0);">수정</a></td>
+                            </tr>
+                            <tr>
+                                <td class="no-left-line">2</td>
+                                <td>abcdefg@daum.net</td>
+                                <td>홍길동</td>
+                                <td>41</td>
+                                <td><a class="btn-type4" href="javascript:void(0);">수정</a></td>
+                            </tr>
+                            <tr>
+                                <td class="no-left-line">3</td>
+                                <td>ganadaramabasa@nate.com</td>
+                                <td>홍길동</td>
+                                <td>43</td>
+                                <td><a class="btn-type4" href="javascript:void(0);">수정</a></td>
+                            </tr>
+                            <tr>
+                                <td class="no-left-line">4</td>
+                                <td>noname@google.com</td>
+                                <td>홍길동</td>
+                                <td>55</td>
+                                <td><a class="btn-type4" href="javascript:void(0);">수정</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-view -->
+            </div>
+            <div class="m-footer fix">
+                <!-- paging -->
+                <div class="paging">
+                    <div class="inner">
+                        <a class="prev-end" href="javascript:void(0);" title="맨 처음 페이지로 가기"></a>
+                        <a class="prev" href="javascript:void(0);" title="이전페이지로 가기"></a>
+                        <a class="on" href="javascript:void(0);">1</a>
+                        <a href="javascript:void(0);">2</a>
+                        <a href="javascript:void(0);">3</a>
+                        <a href="javascript:void(0);">4</a>
+                        <a href="javascript:void(0);">5</a>
+                        <a class="next" href="javascript:void(0);" title="다음페이지로 가기"></a>
+                        <a class="next-end" href="javascript:void(0);" title="마지막 페이지로 가기"></a>
+                    </div>
+                </div>
+                <!-- //paging -->
+            </div>
+            <a class="btn-modal-close" href="javascript:void(0);">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal modalList -->
+    <div class="modal" id="modalRegister" style="width:640px;">
+        <div class="modal-inner">
+            <div class="m-title">제목</div>
+            <div class="m-body">
+                <!-- tbl-write -->
+                <div class="tbl-write">
+                    <table>
+                        <caption>테이블 제목</caption>
+                        <colgroup>
+                            <col style="width:20%;">
+                            <col style="width:30%;">
+                            <col style="width:20%;">
+                            <col style="width:30%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">이름</th>
+                                <td>
+                                    <select class="sel-1" style="width:90%;">
+                                        <option selected="selected">전체</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                    </select>
+                                </td>
+                                <th scope="row">나이</th>
+                                <td>
+                                    <div class="radio-group">
+                                        <div class="common-radio">
+                                            <input id="r-1" type="radio" name="radio">
+                                            <label for="r-1"><span>가능</span></label>
+                                        </div>
+                                        <div class="common-radio">
+                                            <input id="r-2" type="radio" name="radio">
+                                            <label for="r-2"><span>불가능</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">파일첨부</th>
+                                <td colspan="3">
+                                    <div class="common-int-file">
+                                        <div class="file-path ellipsis">C:\filelist.html</div>
+                                        <div class="file-right fix">
+                                            <div class="file-btns">
+                                                <span class="btn-type3">파일첨부</span>
+                                                <input class="int-file" type="file" name="" />
+                                            </div>
+                                            <a class="btn-type3 file-del">삭제</a>
+                                        </div>
+                                    </div>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">내용</th>
+                                <td colspan="3">
+                                    <div class="textareabox" style="width:100%;height:110px;">
+                                        <textarea></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-write -->
+            </div>
+            <div class="m-footer fix">
+                <a class="btn-type2 fr" href="javascript:void(0);">등록</a>
+            </div>
+            <a class="btn-modal-close" href="javascript:void(0);">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+</body>
+</html>

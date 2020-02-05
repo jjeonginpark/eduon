@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>에듀온 매니저</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="../../js/html5shiv.js" charset="utf-8" ></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../../js/ui.js"></script>
+</head>
+<body>
+	<a id="skipNavigation" href="#container">본문 바로가기</a>
+	<!-- wrap -->
+	<div id="wrap" class="sub">
+        <div class="gnb-left">
+            <div style="color:rgba(225,225,225,0.5); text-align:center; margin-top:50px; font-size:20px; font-weight:bold; font-style:italic;">lnb영역</div>
+        </div>
+		<!-- container -->
+		<div class="container">
+			<div class="page-titlebox">
+				<h2 class="title">강좌관리</h2>
+			</div>
+			<!-- contents -->
+			<div class="contents">
+            
+                <strong>tbl-write</strong>
+                <br>
+
+
+
+
+
+
+				<!-- tbl-write -->
+                <div class="tbl-write">
+					<table>
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col style="width:128px;">
+							<col style="width:356px;">
+							<col style="width:128px;">
+							<col style="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">제목</th>
+								<td colspan="3">
+									<input class="int" type="text" style="width:100%;" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">표시일자</th>
+								<td>
+									<select class="sel-1" style="width:128px;">
+										<option selected="selected">전체</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+									</select>
+								</td>
+								<th scope="row">작성자</th>
+								<td>
+									<div class="radio-group">
+										<div class="common-radio">
+											<input id="r-1" type="radio" name="radio">
+											<label for="r-1"><span>가능</span></label>
+										</div>
+										<div class="common-radio">
+											<input id="r-2" type="radio" name="radio">
+											<label for="r-2"><span>불가능</span></label>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">내용</th>
+								<td colspan="3">
+									<div class="textareabox" style="width:100%;height:263px;">
+										<textarea></textarea>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">테이블</th>
+								<td colspan="3">
+									<div class="check-group">
+										<div class="common-check">
+											<input id="c-1" type="checkbox" name="">
+											<label for="c-1"><span>발행</span></label>
+										</div>
+										<div class="common-check">
+											<input id="c-2" type="checkbox" name="">
+											<label for="c-2"><span>미발행</span></label>
+										</div>
+									</div>
+								</td>
+							</tr>
+                            <tr>
+                                <th scope="row">파일첨부</th>
+                                <td colspan="3">
+                                    <div class="common-int-file">
+                                        <div class="file-path ellipsis">C:\filelist.html</div>
+                                        <div class="file-right fix">
+                                            <div class="file-btns">
+                                                <span class="btn-type3">파일첨부</span>
+                                                <input class="int-file" type="file" name="" />
+                                            </div>
+                                            <a class="btn-type3 file-del">삭제</a>
+                                        </div>
+                                    </div>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">내용</th>
+                                <td colspan="3">
+                                    <!-- tbl-type1 td-from -->
+                                    <div class="tbl-type1 td-from">
+                                        <table>
+                                            <caption>테이블 제목</caption>
+                                                <colgroup>
+                                                <col style="width:45px;">
+                                                <col style="*">
+                                                <col style="width:105px;">
+                                                <col style="width:45px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">보기내용</th>
+                                                    <th scope="col">파일등록</th>
+                                                    <th scope="col">정답</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>
+                                                        <div class="textareabox" style="width:100%;height:84px;">
+                                                            <textarea></textarea>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="file-btns2">
+                                                            <span class="btn-type4">파일첨부</span>
+                                                            <input class="int-file" type="file" name="" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="common-check">
+                                                            <input id="c-3" type="checkbox" name="">
+                                                            <label for="c-3"></label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>
+                                                        <div class="textareabox" style="width:100%;height:84px;">
+                                                            <textarea></textarea>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="file-btns2">
+                                                            <span class="btn-type4">파일첨부</span>
+                                                            <input class="int-file" type="file" name="" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="common-check">
+                                                            <input id="c-4" type="checkbox" name="">
+                                                            <label for="c-4"></label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //tbl-type1 td-from -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">내용2</th>
+                                <td colspan="3">
+                                    <!-- tbl-type1 -->
+                                    <div class="tbl-type1">
+                                        <table>
+                                            <caption>테이블 제목</caption>
+                                                <colgroup>
+                                                <col style="width:15%;">
+                                                <col style="*">
+                                                <col style="width:15%;">
+                                                <col style="width:35%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">테이블명 1</th>
+                                                    <th scope="col">테이블명 2</th>
+                                                    <th scope="col">테이블명 3</th>
+                                                    <th scope="col">테이블명 4</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>테이블 내용</td>
+                                                    <td>긴 테이블내용</td>
+                                                    <td>짧은 내용</td>
+                                                    <td>긴 테이블의 내용</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //tbl-type1 -->                                 
+                                </td>
+                            </tr>
+						</tbody>
+					</table>
+				</div>
+                <!-- //tbl-write -->
+                <!-- btnbox -->
+                <div class="btnbox mt10 fix">
+                    <a class="btn-type1 fl" href="javascript:void(0);">목록</a>
+                    <a class="btn-type2 fr" href="javascript:void(0);">등록</a>
+                </div>
+                <!-- //btnbox -->
+
+
+
+
+
+
+
+                <br>
+                <br>
+                <br>
+                <strong>tbl-type1</strong>
+                <br>
+
+
+
+
+
+
+                <!-- tbl-type1 -->
+                <div class="tbl-type1">
+                    <table>
+                        <caption>테이블 제목</caption>
+                            <colgroup>
+                            <col style="width:15%;">
+                            <col style="*">
+                            <col style="width:15%;">
+                            <col style="width:35%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">테이블명 1</th>
+                                <th scope="col">테이블명 2</th>
+                                <th scope="col">테이블명 3</th>
+                                <th scope="col">테이블명 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>테이블 내용</td>
+                                <td>긴 테이블내용</td>
+                                <td>짧은 내용</td>
+                                <td>긴 테이블의 내용</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-type1 -->
+
+
+
+
+
+                <br>
+                <br>
+                <br>
+                <strong>tbl-type1 + td-from</strong>
+                <br>
+
+
+
+
+
+
+                <!-- tbl-type1 -->
+                <div class="tbl-type1 td-from">
+                    <table>
+                        <caption>테이블 제목</caption>
+                            <colgroup>
+                            <col style="width:45px;">
+                            <col style="*">
+                            <col style="width:105px;">
+                            <col style="width:45px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">보기내용</th>
+                                <th scope="col">파일등록</th>
+                                <th scope="col">정답</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>
+                                    <div class="textareabox" style="width:100%;height:84px;">
+                                        <textarea></textarea>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="file-btns2">
+                                        <span class="btn-type4">파일첨부</span>
+                                        <input class="int-file" type="file" name="" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="common-check">
+                                        <input id="c-3" type="checkbox" name="">
+                                        <label for="c-3"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td>
+                                    <div class="textareabox" style="width:100%;height:84px;">
+                                        <textarea></textarea>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="file-btns2">
+                                        <span class="btn-type4">파일첨부</span>
+                                        <input class="int-file" type="file" name="" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="common-check">
+                                        <input id="c-4" type="checkbox" name="">
+                                        <label for="c-4"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-type1 -->
+                
+
+
+
+
+                <br>
+                <br>
+                <br>
+                <strong>tbl-search</strong>
+                <br>
+
+
+
+
+
+
+
+                <!-- tbl-search -->
+                <div class="tbl-search">
+                    <table>
+                        <caption>테이블 제목</caption>
+                            <colgroup>
+                            <col style="width:13%;">
+                            <col style="width:20%;">
+                            <col style="width:13%;">
+                            <col style="width:18%;">
+                            <col style="width:12%;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">쿠폰타입</th>
+                                <td colspan="5">
+                                    <select class="sel-2" style="min-width:128px;">
+                                        <option selected="selected">전체</option>
+                                        <option>쿠폰타입 1</option>
+                                        <option>쿠폰타입 2</option>
+                                        <option>쿠폰타입 3</option>
+                                        <option>쿠폰타입 4</option>
+                                        <option>쿠폰타입 5</option>
+                                        <option>쿠폰타입 6</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">발생구분</th>
+                                <td>
+                                    <div class="check-group">
+                                        <div class="common-check type2">
+                                            <input id="ch-1" type="checkbox" name="">
+                                            <label for="ch-1"><span>발행</span></label>
+                                        </div>
+                                        <div class="common-check type2">
+                                            <input id="ch-2" type="checkbox" name="">
+                                            <label for="ch-2"><span>구분</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <th scope="row">사용가능여부</th>
+                                <td>
+
+                                    <div class="radio-group">
+                                        <div class="common-radio type2">
+                                            <input id="r-1" type="radio" name="radio">
+                                            <label for="r-1"><span>가능</span></label>
+                                        </div>
+                                        <div class="common-radio type2">
+                                            <input id="r-2" type="radio" name="radio" checked>
+                                            <label for="r-2"><span>불가능</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <th scope="row">판매구분</th>
+                                <td>
+                                    <select class="sel-2" style="min-width:128px;">
+                                        <option selected="selected">전체</option>
+                                        <option>판매구분 1</option>
+                                        <option>판매구분 2</option>
+                                        <option>판매구분 3</option>
+                                        <option>판매구분 4</option>
+                                        <option>판매구분 5</option>
+                                        <option>판매구분 6</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">검색어</th>
+                                <td colspan="5">
+                                    <div class="int-search" style="width:88%;">
+                                        <input type="text" />
+                                        <a class="btn-search" href="javascript:void(0);"></a>
+                                    </div>
+                                    <input class="btn-type7" type="reset" value="리셋" />
+                                </td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-search -->
+
+
+
+
+
+
+                <br>
+                <br>
+                <br>
+                <strong>tbl-view + horizon</strong>
+                <br>
+
+
+
+
+
+
+                <!-- tbl-view -->
+                <div class="tbl-view horizon">
+                    <table>
+                        <caption>테이블 제목</caption>
+                        <colgroup>
+                            <col style="width:18%;">
+                            <col style="width:32%;">
+                            <col style="width:18%;">
+                            <col style="width:32%;">
+                            <col >
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="no-left-line">번호</th>
+                                <td colspan="3">새해 선물 쿠폰</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">쿠폰설명</th>
+                                <td colspan="3">새해 선물 쿠폰</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">쿠폰타입</th>
+                                <td>정액</td>
+                                <th scope="row">쿠폰금액</th>
+                                <td>10,000 원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">발행구분</th>
+                                <td>일발발행</td>
+                                <th scope="row">발행매수</th>
+                                <td>10 매</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">결제 최소금액</th>
+                                <td>100,000 원 이상 사용가능</td>
+                                <th scope="row">최대 할인액</th>
+                                <td>10,000 원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">기간구분</th>
+                                <td>기간고정</td>
+                                <th scope="row">기간선택</th>
+                                <td>2017-01-01 ~ 2017-02-28 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">종목발행 허용개수</th>
+                                <td colspan="3">1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="no-left-line">쿠폰이미지</th>
+                                <td colspan="3">2017120_152004.png</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-view -->
+                
+
+
+
+
+
+                <br>
+                <br>
+                <br>
+                <strong>tbl-view</strong>
+                <br>
+
+
+
+                <!-- tbl-title -->
+                <div class="tbl-title">
+                    <div class="title fl">(검색결과 : 6건)</div>
+                    <div class="btns fr">
+                        <a class="btn-type2" href="javascript:void(0);">등록</a>
+                    </div>
+                </div>
+                <!-- //tbl-title -->
+                <!-- tbl-view -->
+                <div class="tbl-view">
+                    <table>
+                        <caption>테이블 제목</caption>
+                        <colgroup>
+                            <col style="width:60px;">
+                            <col >
+                            <col style="width:80px;">
+                            <col style="width:85px">
+                            <col style="width:80px;">
+                            <col style="width:70px;">
+                            <col style="width:130px;">
+                            <col style="width:80px;">
+                            <col style="width:80px;">
+                            <col style="width:80px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="no-left-line">번호</th>
+                                <th scope="col" class="text-left">쿠폰명</th>
+                                <th scope="col">쿠폰타입</th>
+                                <th scope="col">금액</th>
+                                <th scope="col">발생구분</th>
+                                <th scope="col">발급수</th>
+                                <th scope="col">사용기간</th>
+                                <th scope="col">사용여부</th>
+                                <th scope="col">강좌선택</th>
+                                <th scope="col">편집</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="no-left-line">6</td>
+                                <td class="text-left">수시발생쿠폰입니다.</td>
+                                <td>정액</td>
+                                <td class="text-right">3,000원</td>
+                                <td>발생구분</td>
+                                <td class="text-right">0</td>
+                                <td>30일이내</td>
+                                <td>사용가능</td>
+                                <td>모든강좌</td>
+                                <td>편집</td>
+                            </tr>
+                            <tr>
+                                <td class="no-left-line">5</td>
+                                <td class="text-left">수시발생쿠폰입니다.</td>
+                                <td>정액</td>
+                                <td class="text-right">3,000원</td>
+                                <td>발생구분</td>
+                                <td class="text-right">0</td>
+                                <td>30일이내</td>
+                                <td>사용가능</td>
+                                <td>모든강좌</td>
+                                <td>편집</td>
+                            </tr>
+                            <tr>
+                                <td class="no-left-line">4</td>
+                                <td class="text-left">수시발생쿠폰입니다.</td>
+                                <td>정액</td>
+                                <td class="text-right">3,000원</td>
+                                <td>발생구분</td>
+                                <td class="text-right">0</td>
+                                <td>30일이내</td>
+                                <td>사용가능</td>
+                                <td>모든강좌</td>
+                                <td>편집</td>
+                            </tr>
+                            <tr>
+                                <td class="no-left-line">3</td>
+                                <td class="text-left">수시발생쿠폰입니다.</td>
+                                <td>정액</td>
+                                <td class="text-right">3,000원</td>
+                                <td>발생구분</td>
+                                <td class="text-right">0</td>
+                                <td>30일이내</td>
+                                <td>사용가능</td>
+                                <td>모든강좌</td>
+                                <td>편집</td>
+                            </tr>
+                            <tr>
+                                <td class="no-left-line">2</td>
+                                <td class="text-left">수시발생쿠폰입니다.</td>
+                                <td>정액</td>
+                                <td class="text-right">3,000원</td>
+                                <td>발생구분</td>
+                                <td class="text-right">0</td>
+                                <td>30일이내</td>
+                                <td>사용가능</td>
+                                <td>모든강좌</td>
+                                <td>편집</td>
+                            </tr>
+                            <tr>
+                                <td class="no-left-line">1</td>
+                                <td class="text-left">수시발생쿠폰입니다.</td>
+                                <td>정액</td>
+                                <td class="text-right">3,000원</td>
+                                <td>발생구분</td>
+                                <td class="text-right">0</td>
+                                <td>30일이내</td>
+                                <td>사용가능</td>
+                                <td>모든강좌</td>
+                                <td>편집</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //tbl-view -->
+
+
+                <!-- paging -->
+                <div class="paging">
+                    <div class="inner">
+                        <a class="prev-end" href="javascript:void(0);" title="맨 처음 페이지로 가기"></a>
+                        <a class="prev" href="javascript:void(0);" title="이전페이지로 가기"></a>
+                        <a class="on" href="javascript:void(0);">1</a>
+                        <a href="javascript:void(0);">2</a>
+                        <a href="javascript:void(0);">3</a>
+                        <a href="javascript:void(0);">4</a>
+                        <a href="javascript:void(0);">5</a>
+                        <a class="next" href="javascript:void(0);" title="다음페이지로 가기"></a>
+                        <a class="next-end" href="javascript:void(0);" title="마지막 페이지로 가기"></a>
+                    </div>
+                </div>
+                <!-- //paging -->
+
+
+			</div>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>
